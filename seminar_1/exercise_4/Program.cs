@@ -1,15 +1,4 @@
-﻿//Объявление переменных
-string str_number_1;
-int number_1;
-string str_number_2;
-int number_2;
-string str_number_3;
-int number_3;
-
-//Ввод первого числа
-Console.WriteLine("Введите первое число");
-str_number_1 = Console.ReadLine();
-number_1 = int.Parse(str_number_1);
+﻿
 
 //Ввод второго числа
 Console.WriteLine("Введите второе число");
