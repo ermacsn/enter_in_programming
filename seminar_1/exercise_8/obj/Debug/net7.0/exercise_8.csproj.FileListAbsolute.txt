@@ -1,0 +1,15 @@
+/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_1/exercise_8/obj/Debug/net7.0/exercise_8.csproj.AssemblyReference.cache
+/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_1/exercise_8/obj/Debug/net7.0/exercise_8.GeneratedMSBuildEditorConfig.editorconfig
+/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_1/exercise_8/obj/Debug/net7.0/exercise_8.AssemblyInfoInputs.cache
+/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_1/exercise_8/obj/Debug/net7.0/exercise_8.AssemblyInfo.cs
+/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_1/exercise_8/obj/Debug/net7.0/exercise_8.csproj.CoreCompileInputs.cache
+/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_1/exercise_8/bin/Debug/net7.0/exercise_8
+/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_1/exercise_8/bin/Debug/net7.0/exercise_8.deps.json
+/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_1/exercise_8/bin/Debug/net7.0/exercise_8.runtimeconfig.json
+/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_1/exercise_8/bin/Debug/net7.0/exercise_8.dll
+/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_1/exercise_8/bin/Debug/net7.0/exercise_8.pdb
+/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_1/exercise_8/obj/Debug/net7.0/exercise_8.dll
+/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_1/exercise_8/obj/Debug/net7.0/refint/exercise_8.dll
+/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_1/exercise_8/obj/Debug/net7.0/exercise_8.pdb
+/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_1/exercise_8/obj/Debug/net7.0/exercise_8.genruntimeconfig.cache
+/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_1/exercise_8/obj/Debug/net7.0/ref/exercise_8.dll
