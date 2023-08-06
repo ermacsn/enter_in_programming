@@ -1,0 +1,15 @@
+/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_2/exercise_15/bin/Debug/net7.0/exercise_15
+/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_2/exercise_15/bin/Debug/net7.0/exercise_15.deps.json
+/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_2/exercise_15/bin/Debug/net7.0/exercise_15.runtimeconfig.json
+/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_2/exercise_15/bin/Debug/net7.0/exercise_15.dll
+/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_2/exercise_15/bin/Debug/net7.0/exercise_15.pdb
+/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_2/exercise_15/obj/Debug/net7.0/exercise_15.csproj.AssemblyReference.cache
+/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_2/exercise_15/obj/Debug/net7.0/exercise_15.GeneratedMSBuildEditorConfig.editorconfig
+/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_2/exercise_15/obj/Debug/net7.0/exercise_15.AssemblyInfoInputs.cache
+/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_2/exercise_15/obj/Debug/net7.0/exercise_15.AssemblyInfo.cs
+/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_2/exercise_15/obj/Debug/net7.0/exercise_15.csproj.CoreCompileInputs.cache
+/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_2/exercise_15/obj/Debug/net7.0/exercise_15.dll
+/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_2/exercise_15/obj/Debug/net7.0/refint/exercise_15.dll
+/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_2/exercise_15/obj/Debug/net7.0/exercise_15.pdb
+/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_2/exercise_15/obj/Debug/net7.0/exercise_15.genruntimeconfig.cache
+/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_2/exercise_15/obj/Debug/net7.0/ref/exercise_15.dll
