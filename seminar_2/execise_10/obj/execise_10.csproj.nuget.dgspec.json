@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_2/seminar_2.csproj": {}
+    "/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_2/execise_10/execise_10.csproj": {}
   },
   "projects": {
-    "/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_2/seminar_2.csproj": {
+    "/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_2/execise_10/execise_10.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_2/seminar_2.csproj",
-        "projectName": "seminar_2",
-        "projectPath": "/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_2/seminar_2.csproj",
+        "projectUniqueName": "/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_2/execise_10/execise_10.csproj",
+        "projectName": "execise_10",
+        "projectPath": "/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_2/execise_10/execise_10.csproj",
         "packagesPath": "/home/ermac_/.nuget/packages/",
-        "outputPath": "/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_2/obj/",
+        "outputPath": "/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_2/execise_10/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/ermac_/.nuget/NuGet/NuGet.Config"
