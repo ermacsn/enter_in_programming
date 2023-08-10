@@ -1,4 +1,10 @@
-﻿//Ввод числа
+﻿
+//Задача 19
+//Напишите программу, которая принимает на вход число и проверяет, 
+//является ли оно палиндромом.
+
+
+//Ввод числа
 
 Console.Write("Введите число: ");
 int Number = int.Parse(Console.ReadLine());
@@ -43,29 +49,57 @@ for (int i = 1; i <= CountSymbol / 2; i++) //количество итераци
 }
 // Вывод результата
 if (PolindromTrue && (CountSymbol > 1)) 
-    Console.WriteLine("Введенное число является полиндромом");
+    Console.WriteLine("Введенное число является пaлиндромом");
 else
-    Console.WriteLine("Введенное число не является полиндромом");
+    Console.WriteLine("Введенное число не является пaлиндромом");
+
 
 
 //Задача 21
-
+//Напишите программу, которая принимает на вход координаты двух 
+//точек и находит расстояние между ними в 3D пространстве.
 
 //Вводим координаты точек    
 Console.Write("Введите координату Х точки 1:");
 int coordX1 = int.Parse(Console.ReadLine());
-Console.Write("Введите коодинату Y точки 1:");
+Console.Write("Введите кооpдинату Y точки 1:");
 int coordY1 = int.Parse(Console.ReadLine());
-Console.Write("Введите коодинату Z точки 1:");
+Console.Write("Введите кооpдинату Z точки 1:");
 int coordZ1 = int.Parse(Console.ReadLine());
 
 Console.Write("Введите координату Х точки 2:");
 int coordX2 = int.Parse(Console.ReadLine());
-Console.Write("Введите коодинату Y точки 2:");
+Console.Write("Введите кооpдинату Y точки 2:");
 int coordY2 = int.Parse(Console.ReadLine());
-Console.Write("Введите коодинату Z точки 2:");
+Console.Write("Введите кооpдинату Z точки 2:");
 int coordZ2 = int.Parse(Console.ReadLine());
 
-double distance = Math.Sqrt(Math.Pow((coordX2-coordX1),2) + Math.Pow((coordY2-coordY1),2) + Math.Pow((coordZ2-coordZ1),2));
 
+// Вычисляем и выводим расстояние
+double distance = Math.Sqrt(Math.Pow((coordX2-coordX1),2) + Math.Pow((coordY2-coordY1),2) + Math.Pow((coordZ2-coordZ1),2));
 Console.WriteLine($"Расстояние между точками равно {distance}");
+
+
+
+//Задача 23
+//Напишите программу, которая принимает на вход число (N)
+//и выдаёт таблицу кубов чисел от 1 до N.
+
+//Ввод числа
+
+System.Console.Write("Введите число: ");
+int numbersqrt = int.Parse(Console.ReadLine());
+int sign = 1;
+
+if (numbersqrt < 0)
+{
+    numbersqrt = numbersqrt * (-1); //определяем количество итераций цикла for
+    sign = -1; //запоминаем знак числа
+}
+
+// Вычисляем и выводим результат
+for (int i = 0; i <= numbersqrt; i++)
+{
+    Console.WriteLine($"Куб числа {sign * i} равен: {sign * i * i * i}");
+}
+
