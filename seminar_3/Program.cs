@@ -46,3 +46,26 @@ if (PolindromTrue && (CountSymbol > 1))
     Console.WriteLine("Введенное число является полиндромом");
 else
     Console.WriteLine("Введенное число не является полиндромом");
+
+
+//Задача 21
+
+
+//Вводим координаты точек    
+Console.Write("Введите координату Х точки 1:");
+int coordX1 = int.Parse(Console.ReadLine());
+Console.Write("Введите коодинату Y точки 1:");
+int coordY1 = int.Parse(Console.ReadLine());
+Console.Write("Введите коодинату Z точки 1:");
+int coordZ1 = int.Parse(Console.ReadLine());
+
+Console.Write("Введите координату Х точки 2:");
+int coordX2 = int.Parse(Console.ReadLine());
+Console.Write("Введите коодинату Y точки 2:");
+int coordY2 = int.Parse(Console.ReadLine());
+Console.Write("Введите коодинату Z точки 2:");
+int coordZ2 = int.Parse(Console.ReadLine());
+
+double distance = Math.Sqrt(Math.Pow((coordX2-coordX1),2) + Math.Pow((coordY2-coordY1),2) + Math.Pow((coordZ2-coordZ1),2));
+
+Console.WriteLine($"Расстояние между точками равно {distance}");
