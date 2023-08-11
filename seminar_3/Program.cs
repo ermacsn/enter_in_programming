@@ -69,7 +69,7 @@ int coordZ1 = int.Parse(Console.ReadLine());
 
 Console.Write("Введите координату Х точки 2:");
 int coordX2 = int.Parse(Console.ReadLine());
-Console.Write("Введите кооpдинату Y точки 2:");
+Console.Write("Введите кооpдинату Y точки 2:"); 
 int coordY2 = int.Parse(Console.ReadLine());
 Console.Write("Введите кооpдинату Z точки 2:");
 int coordZ2 = int.Parse(Console.ReadLine());
@@ -102,4 +102,4 @@ for (int i = 0; i <= numbersqrt; i++)
 {
     Console.WriteLine($"Куб числа {sign * i} равен: {sign * i * i * i}");
 }
-
+ 

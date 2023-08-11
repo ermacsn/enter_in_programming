@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_3/seminar_3.csproj": {}
+    "/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_4/seminar_4.csproj": {}
   },
   "projects": {
-    "/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_3/seminar_3.csproj": {
+    "/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_4/seminar_4.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_3/seminar_3.csproj",
-        "projectName": "seminar_3",
-        "projectPath": "/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_3/seminar_3.csproj",
+        "projectUniqueName": "/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_4/seminar_4.csproj",
+        "projectName": "seminar_4",
+        "projectPath": "/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_4/seminar_4.csproj",
         "packagesPath": "/home/ermac_/.nuget/packages/",
-        "outputPath": "/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_3/obj/",
+        "outputPath": "/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_4/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/ermac_/.nuget/NuGet/NuGet.Config"
