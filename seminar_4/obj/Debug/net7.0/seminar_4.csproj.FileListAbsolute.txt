@@ -1,0 +1,15 @@
+/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_4/bin/Debug/net7.0/seminar_4
+/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_4/bin/Debug/net7.0/seminar_4.deps.json
+/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_4/bin/Debug/net7.0/seminar_4.runtimeconfig.json
+/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_4/bin/Debug/net7.0/seminar_4.dll
+/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_4/bin/Debug/net7.0/seminar_4.pdb
+/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_4/obj/Debug/net7.0/seminar_4.csproj.AssemblyReference.cache
+/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_4/obj/Debug/net7.0/seminar_4.GeneratedMSBuildEditorConfig.editorconfig
+/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_4/obj/Debug/net7.0/seminar_4.AssemblyInfoInputs.cache
+/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_4/obj/Debug/net7.0/seminar_4.AssemblyInfo.cs
+/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_4/obj/Debug/net7.0/seminar_4.csproj.CoreCompileInputs.cache
+/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_4/obj/Debug/net7.0/seminar_4.dll
+/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_4/obj/Debug/net7.0/refint/seminar_4.dll
+/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_4/obj/Debug/net7.0/seminar_4.pdb
+/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_4/obj/Debug/net7.0/seminar_4.genruntimeconfig.cache
+/home/ermac_/Work/GeekBrains/enter_in_programming/seminar_4/obj/Debug/net7.0/ref/seminar_4.dll
