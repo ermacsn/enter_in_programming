@@ -50,11 +50,41 @@ int CountNumber(int number)
             number = number / 10;
             count = count + 1;
         }
-    }    
-    else
+    } 
+    else    
         count = 1;
     return count;
 }
 
 //Вызов функций и вывод результата
 Console.WriteLine($"Количество цифр в числе: {CountNumber(InputNumber("число"))}");
+
+
+//Задача 29: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
+
+// Функция формирует массив указанной длины и заполняет его числами, которые находятся в лимитах 
+int[] CreatArray(int count, int min, int max)
+{
+    int[] array = new int[count];
+    Random rand = new Random();
+
+    for (int i = 0; i < count; i++)
+    {
+        array[i] = rand.Next(min, max + 1);
+    }
+    return array;
+}
+
+//Фунция выводит элементы мвссива 
+void ArrayPrint(int[] numbers)
+{
+    Console.Write("Сформированный массив: [");
+    for (int i = 0; i < numbers.Length; i++)
+    {
+        Console.Write($"{numbers[i]},");
+    }
+    Console.WriteLine("]");
+}
+
+//Вызов функций и вывод результата
+ArrayPrint(CreatArray(10, 0, 10));
