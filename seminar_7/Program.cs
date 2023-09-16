@@ -27,7 +27,7 @@ double[,] GetMatrixDouble(int rows, int columns, int minValue, int maxValue) //�
     return matrix;
 }
 
-void PrintMatrix(double [,] matrix) // вывод матрицы в консоль
+void PrintMatrixDouble(double [,] matrix) // вывод матрицы в консоль
 {
     for (int i = 0; i < matrix.GetLength(0); i++)
     {
@@ -45,7 +45,7 @@ int rowsMatrix = SetNumberInt("Введите количество строк м
 int columnsMatrix = SetNumberInt("Введите количество столбцов матрицы: ");
 double[,] matrixDouble = GetMatrixDouble(rows: rowsMatrix, columns: columnsMatrix, minValue: 0, maxValue: 9);
 Console.WriteLine("Сформированная матрица вещественных чисел: ");
-PrintMatrix(matrixDouble);
+PrintMatrixDouble(matrixDouble);
 
 /*
 Задача 50. Напишите программу, которая на вход принимает позиции элемента в двумерном массиве, 
@@ -59,10 +59,10 @@ PrintMatrix(matrixDouble);
 
 string GetElement(double[,] matrix, int row, int column) //получение значения элемента матрицы по номеру столбца и строки
 {
-    if (matrix.GetLength(0) < row || matrix.GetLength(1) < column) return "Элемент с такими параметрами отсутсвует";
+    if (matrix.GetLength(0) <= row || matrix.GetLength(1) <= column) return "Элемент с такими параметрами отсутсвует";
     else
         return ($"{matrix[row, column]}");
-}
+} 
 
 //Решение задачи 50
 int rowElement = SetNumberInt("Введите номер строки элемента в матрице: ");
@@ -93,7 +93,9 @@ int[,] GetMatrixInt(int rows, int columns, int minValue, int maxValue) //фор�
     }
     return matrix;
 }
-double [] AverageColumnsMatrix(int [,] matrix)
+
+
+double [] AverageColumnsMatrix(int [,] matrix)//вычисление среднего арифметического по столбцам
 {
    double [] averageArray = new double [matrix.GetLength(1)]; 
     for (int i = 0; i < matrix.GetLength(1); i++)
@@ -103,7 +105,7 @@ double [] AverageColumnsMatrix(int [,] matrix)
         {
             averageArray[i] = averageArray[i] + matrix[j,i];
         }
-        averageArray[i] = Math.Round(averageArray[i]/matrix.GetLength(0), 2);
+        averageArray[i] = averageArray[i]/matrix.GetLength(0);
     }
     return averageArray;
 }
