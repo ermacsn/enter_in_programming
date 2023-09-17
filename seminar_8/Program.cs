@@ -1,11 +1,12 @@
-﻿//Семинар
+﻿using System.Globalization;
+using System.Security.Principal;
+using System.Xml.XPath;
+using System.Threading;
+
+//Семинар
 
 //Задача 53: Задайте двумерный массив. Напишите программу, которая поменяет местами первую
 // и последнюю строку массива.
-
-using System.Globalization;
-using System.Security.Principal;
-using System.Xml.XPath;
 
 int SetNumberInt(string message) //получение числа от пользователя
 {
@@ -55,8 +56,8 @@ int[,] ReplaceRowsMatrixInt(int[,] matrix)// замена строк в  мат�
     return replaceMatrix;
 }
 
-//Решение задачи 53.
 Console.Clear();
+Console.WriteLine("Задача 53.");
 int rowsMatrixInt = SetNumberInt("Введите количество строк матрицы: ");
 int columnsMatrixInt = SetNumberInt("Введите количество столбцов матрицы: ");
 int minValue = SetNumberInt("Введите минимальное значение элементов матрицы: ");
@@ -87,7 +88,8 @@ int[,] TransposeMatrixInt(int[,] matrix) // транспонируем матр�
     return newMatrix;
 }
 
-//Решение задачи 55.
+Console.WriteLine();
+Console.WriteLine("Задача 55.");
 int[,] TMatrixInt = TransposeMatrixInt(matrixInt);
 Console.WriteLine("Транспонированная матрица: ");
 PrintMatrixInt(TMatrixInt);
@@ -128,7 +130,8 @@ void Rider(int[,] matrix)// поиск и вывод чисел
     }
 }
 
-//Решение задачи 57.
+Console.WriteLine();
+Console.WriteLine("Задача 57.");
 Console.WriteLine("Словарь элементов матрицы: ");
 Rider(matrixInt);
 
@@ -169,7 +172,8 @@ int[,] SortMatrix(int[,] matrix) //сортировка элементов в с
     return newMatrix;
 }
 
-//Решение задачи 54.
+Console.WriteLine();
+Console.WriteLine("Задача 54.");
 int[,] SortedMatrixInt = SortMatrix(matrixInt);
 Console.WriteLine("Отсортированный по строкам массив: ");
 PrintMatrixInt(SortedMatrixInt);
@@ -210,11 +214,11 @@ int MinSumElementsRows (int [,] matrix)//поиск строки с миниал
             minIndex = i;
         }
     }    
-    Console.WriteLine(string.Join(" ", SumRows));
     return minIndex;
 }
 
-//Решение задачи 54.
+Console.WriteLine();
+Console.WriteLine("Задача 56.");
 int MinRowMatrixInt = MinSumElementsRows(matrixInt);
 Console.WriteLine($"Строка с миниммальной суммой элементов(первая): {MinRowMatrixInt}");
 
@@ -256,8 +260,37 @@ void PrintArray3D(int [,,] array)
         {
             for (int k = 0; k < dimensionZ; k++)
             {
-                Console.WriteLine($"array[i,j,k]
+                Console.Write($"{array[i,j,k]}({i},{j},{k}) ");
             }
-        }
+            Console.WriteLine();
+        }       
     }
 }
+
+Console.WriteLine();
+Console.WriteLine("Задача 60.");
+int dimensionXArray3D = SetNumberInt("Введите первую размерность трехмерного массива: ");
+int dimensionYArray3D = SetNumberInt("Введите вторую размерность трехмерного массива: ");
+int dimensionZArray3D = SetNumberInt("Введите третью размерность трехмерного массива: ");
+int minValue3D = SetNumberInt("Введите минимальное значение элементов массива: ");
+int maxValue3D = SetNumberInt("Введите максимальное значение элемeнтов массива: ");
+Console.WriteLine("Сформированный трехмерный массив: ");
+int[,,] ArrayInt3D = GetMatrixInt3D(dimensionX: dimensionXArray3D, dimensionY: dimensionYArray3D,
+                                    dimensionZ: dimensionZArray3D, min: minValue3D, max: maxValue3D);
+PrintArray3D(ArrayInt3D);
+
+/*
+Задача 62. Напишите программу, которая заполнит спирально массив 4 на 4.
+Например, на выходе получается вот такой массив:
+01 02 03 04
+12 13 14 05
+11 16 15 06
+10 09 08 07
+*/
+
+void ShowFillMatrixInt(int rows, int columns, int min, int max)
+{
+    int[,] matrix = new int[rows, columns];
+    var random = new Random();
+    
+} 
