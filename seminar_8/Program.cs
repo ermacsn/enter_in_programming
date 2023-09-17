@@ -162,9 +162,9 @@ int[,] SortMatrix(int[,] matrix) //сортировка элементов в с
             {
                 if (newMatrix[i, j - 1] > newMatrix[i, j])
                 {
-                    max = newMatrix[i, j-1];
-                    newMatrix[i, j-1] = newMatrix[i, j];
-                    newMatrix[i,j] = max;
+                    max = newMatrix[i, j - 1];
+                    newMatrix[i, j - 1] = newMatrix[i, j];
+                    newMatrix[i, j] = max;
                 }
             }
         }
@@ -190,7 +190,7 @@ PrintMatrixInt(SortedMatrixInt);
 элементов: 1 строка
 */
 
-int MinSumElementsRows (int [,] matrix)//поиск строки с миниальной суммой элементов
+int MinSumElementsRows(int[,] matrix)//поиск строки с миниальной суммой элементов
 {
     int numberRows = matrix.GetLength(0);
     int numberColumns = matrix.GetLength(1);
@@ -200,7 +200,7 @@ int MinSumElementsRows (int [,] matrix)//поиск строки с миниал
     {
         for (int j = 0; j < numberColumns; j++)
         {
-            SumRows[i] = SumRows[i] + matrix[i,j];
+            SumRows[i] = SumRows[i] + matrix[i, j];
         }
     }
     //поиск в массиве минимального элемента
@@ -208,12 +208,12 @@ int MinSumElementsRows (int [,] matrix)//поиск строки с миниал
     int minIndex = 0;
     for (int i = 1; i < numberRows; i++)
     {
-        if (min > SumRows[i]) 
+        if (min > SumRows[i])
         {
             min = SumRows[i];
             minIndex = i;
         }
-    }    
+    }
     return minIndex;
 }
 
@@ -233,7 +233,7 @@ Console.WriteLine($"Строка с миниммальной суммой эле
 */
 
 //формирование трехмерного массива целых чисел
-int[,,] GetMatrixInt3D(int dimensionX, int dimensionY, int dimensionZ, int min, int max) 
+int[,,] GetMatrixInt3D(int dimensionX, int dimensionY, int dimensionZ, int min, int max)
 {
     int[,,] array = new int[dimensionX, dimensionY, dimensionZ];
     var random = new Random();
@@ -243,13 +243,13 @@ int[,,] GetMatrixInt3D(int dimensionX, int dimensionY, int dimensionZ, int min, 
         {
             for (int k = 0; k < dimensionZ; k++)
             {
-                array[i,j,k] = random.Next(min, max);
+                array[i, j, k] = random.Next(min, max);
             }
         }
     }
     return array;
 }
-void PrintArray3D(int [,,] array)
+void PrintArray3D(int[,,] array)
 {
     int dimensionX = array.GetLength(0);
     int dimensionY = array.GetLength(1);
@@ -260,10 +260,10 @@ void PrintArray3D(int [,,] array)
         {
             for (int k = 0; k < dimensionZ; k++)
             {
-                Console.Write($"{array[i,j,k]}({i},{j},{k}) ");
+                Console.Write($"{array[i, j, k]}({i},{j},{k}) ");
             }
             Console.WriteLine();
-        }       
+        }
     }
 }
 
@@ -288,9 +288,66 @@ PrintArray3D(ArrayInt3D);
 10 09 08 07
 */
 
-void ShowFillMatrixInt(int rows, int columns, int min, int max)
+int[,] FillSpiralMatrixInt(int countRows, int countColumns)
 {
-    int[,] matrix = new int[rows, columns];
-    var random = new Random();
-    
-} 
+    int beginRows = 0;
+    int beginColumns = 0;
+    int endRows = countRows - 1;
+    int endColumns = countColumns -1;
+    int[,] matrix = new int[countRows, countColumns];
+    int countElements = countRows * countColumns;
+    int sum = 0;
+
+    while (sum <= countElements - 1)
+    {
+        for (int j = beginColumns; j <= endColumns; j++)//горизонтально слева направо
+        {
+            matrix[beginRows, j] = sum;
+            sum++;
+        }
+
+        for (int i = beginRows + 1; i <= endRows; i++)//вертикально сверху вниз
+        {
+            matrix[i, endColumns] = sum;
+            sum++;
+        }
+
+        for (int j = endColumns - 1; j >= beginColumns; j--)//горизонтально справа налево
+        {
+            matrix[endRows, j] = sum;
+            sum++;
+        }
+
+        for (int i = endRows - 1; i >= beginRows + 1; i--)//вертикально снизу вверх
+        {
+            matrix[i, beginColumns] = sum;
+            sum++;
+        }
+
+        beginRows++;
+        beginColumns++;
+        endRows--;
+        endColumns--;
+    }
+    return matrix;
+}
+
+void PrintSpiralMatrixInt(int[,] matrix) // вывод сиральной матрицы в консоль
+{
+    for (int i = 0; i < matrix.GetLength(0); i++)
+    {
+        for (int j = 0; j < matrix.GetLength(1); j++)
+        {
+            Console.Write($"{matrix[i, j].ToString("000")} ");
+        }
+        Console.WriteLine();
+    }
+}
+
+Console.WriteLine();
+Console.WriteLine("Задача 60.");
+int spiralRowsMatrixInt = SetNumberInt("Введите количесво строк спиральной матрицы: ");
+int spiralColumnsMatrixInt = SetNumberInt("Введите количество столбцов спиральной матрицы: ");
+Console.WriteLine("Матрица, заполненная спиралью: ");
+int[,] filedSpiralmarixInt = FillSpiralMatrixInt(spiralRowsMatrixInt, spiralColumnsMatrixInt);
+PrintSpiralMatrixInt(filedSpiralmarixInt);
